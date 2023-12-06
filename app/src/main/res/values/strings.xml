@@ -1,3 +1,63 @@
 <resources>
     <string name="app_name">Kuizkuy!</string>
+
+    <string-array name="question1">
+        <item>Apa nama ibu kota dari Provinsi D. I. Yogyakarta?</item>
+        <item>Berapa jumlah provinsi di Indonesia?</item>
+        <item>Berapa jumlah pulau di Indonesia?</item>
+    </string-array>
+
+    <string-array name="question1_answer1">
+        <item>Surakarta</item>
+        <item>38</item>
+        <item>16.771</item>
+    </string-array>
+
+    <string-array name="question1_answer2">
+        <item>Yogyakarta</item>
+        <item>36</item>
+        <item>15.544</item>
+    </string-array>
+
+    <string-array name="question1_answer3">
+        <item>Purwakarta</item>
+        <item>34</item>
+        <item>17.754</item>
+    </string-array>
+
+    <string-array name="question1_true_answer">
+        <item>Yogyakarta</item>
+        <item>38</item>
+        <item>16.771</item>
+    </string-array>
+
+    <string-array name="question2">
+        <item>Kapan Perang Dunia II terjadi?</item>
+        <item>Siapa pemenang dalam Perang Dunia II?</item>
+        <item>Siapa wakil presiden ke-2 Republik Indonesia?</item>
+    </string-array>
+
+    <string-array name="question2_answer1">
+        <item>Tahun 2003 sampai 2006</item>
+        <item>Blok Sekutu</item>
+        <item>Sri Sultan Hamengkubuwono IX</item>
+    </string-array>
+
+    <string-array name="question2_answer2">
+        <item>Tahun 1990 sampai 1998</item>
+        <item>Blok Poros</item>
+        <item>B. J. Habibie</item>
+    </string-array>
+
+    <string-array name="question2_answer3">
+        <item>Tahun 1939 sampai 1945</item>
+        <item>Jerman</item>
+        <item>Abdurrahman Wahid</item>
+    </string-array>
+
+    <string-array name="question2_true_answer">
+        <item>Tahun 1939 sampai 1945</item>
+        <item>Blok Sekutu</item>
+        <item>Sri Sultan Hamengkubuwono IX</item>
+    </string-array>
 </resources>
