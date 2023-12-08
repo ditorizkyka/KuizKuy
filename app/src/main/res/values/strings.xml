@@ -4,9 +4,12 @@
     <string name="choose_topic">Pilih Topik Kuis</string>
     <string name="topic1">Topik 1</string>
     <string name="topic2">Topik 2</string>
+    <string name="topic3">Topik 3</string>
     <string name="quiz_number">No. 1</string>
     <string name="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fringilla ut morbi tincidunt augue interdum. Elit eget gravida cum sociis natoque penatibus. Etiam sit amet nisl purus in mollis nunc. Purus ut faucibus pulvinar elementum. Urna porttitor rhoncus dolor purus non enim praesent. Venenatis urna cursus eget nunc scelerisque viverra. Vel risus commodo viverra maecenas. Id consectetur purus ut faucibus pulvinar elementum integer. Diam ut venenatis tellus in metus vulputate eu scelerisque felis. A erat nam at lectus urna duis convallis. Facilisi morbi tempus iaculis urna id.</string>
     <string name="choose_answer">Pilih Jawaban</string>
+    <string name="type_answer">Ketik Jawaban</string>
+    <string name="next_answer">Lanjut</string>
     <string name="answer1">Jawaban 1</string>
     <string name="answer2">Jawaban 2</string>
     <string name="answer3">Jawaban 3</string>
@@ -77,4 +80,19 @@
         <item>Blok Sekutu</item>
         <item>Sri Sultan Hamengkubuwono IX</item>
     </string-array>
+
+    <string-array name="question3">
+        <item>1+1</item>
+        <item>2+2</item>
+        <item>3+3</item>
+    </string-array>
+
+    <string-array name="question3_true_answer">
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+    </string-array>
+    
+    <string name="btn_about">About App</string>
+    <string name="desc_about">KuizKuy! adalah sebuah aplikasi yang menyediakan banyak soal-soal menarik seputar pengetahuan umum. Kuizkuy memiliki misi untuk memberikan pengetahuan sebanyak-banyaknya dan menambah wawasan para pengguna setelah menggunakan aplikasi ini.  </string>
 </resources>

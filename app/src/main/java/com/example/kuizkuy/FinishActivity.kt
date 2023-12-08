@@ -10,6 +10,7 @@ import android.widget.TextView
 class FinishActivity : AppCompatActivity() {
     companion object {
         const val EXTRA_QUESTION = "extra_question"
+        const val EXTRA_QUESTIONESSAY = "extra_q_essay"
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,9 +24,20 @@ class FinishActivity : AppCompatActivity() {
             @Suppress("DEPRECATION")
             intent.getParcelableExtra(EXTRA_QUESTION)
         }
-
-        if (q != null) {
+        if (q != null ) {
             score.text = "${(q.point*100)/q.question.size}/100"
+        }
+
+        val e = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            intent.getParcelableExtra(EXTRA_QUESTIONESSAY, QuestionEssay::class.java)
+        } else {
+            @Suppress("DEPRECATION")
+            intent.getParcelableExtra(EXTRA_QUESTIONESSAY)
+        }
+
+
+        if (e != null) {
+            score.text = "${(e.point*100)/e.question.size}/100"
         }
 
         val finishBtn: Button = findViewById(R.id.btn_finish)
