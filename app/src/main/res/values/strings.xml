@@ -1,5 +1,20 @@
 <resources>
     <string name="app_name">Kuizkuy!</string>
+    <string name="landing_description">Silahkan pilih salah satu topik di bawah untuk memulai</string>
+    <string name="choose_topic">Pilih Topik Kuis</string>
+    <string name="topic1">Topik 1</string>
+    <string name="topic2">Topik 2</string>
+    <string name="quiz_number">No. 1</string>
+    <string name="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fringilla ut morbi tincidunt augue interdum. Elit eget gravida cum sociis natoque penatibus. Etiam sit amet nisl purus in mollis nunc. Purus ut faucibus pulvinar elementum. Urna porttitor rhoncus dolor purus non enim praesent. Venenatis urna cursus eget nunc scelerisque viverra. Vel risus commodo viverra maecenas. Id consectetur purus ut faucibus pulvinar elementum integer. Diam ut venenatis tellus in metus vulputate eu scelerisque felis. A erat nam at lectus urna duis convallis. Facilisi morbi tempus iaculis urna id.</string>
+    <string name="choose_answer">Pilih Jawaban</string>
+    <string name="answer1">Jawaban 1</string>
+    <string name="answer2">Jawaban 2</string>
+    <string name="answer3">Jawaban 3</string>
+    <string name="congrats">Selamat, Anda berhasil menyelesaikan kuis</string>
+    <string name="your_score">Skor Anda</string>
+    <string name="score">100/100</string>
+
+    <!-- Topik 1: Geografi -->
 
     <string-array name="question1">
         <item>Apa nama ibu kota dari Provinsi D. I. Yogyakarta?</item>
@@ -30,6 +45,8 @@
         <item>38</item>
         <item>16.771</item>
     </string-array>
+
+    <!-- Topik 2: Sejarah -->
 
     <string-array name="question2">
         <item>Kapan Perang Dunia II terjadi?</item>

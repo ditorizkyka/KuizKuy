@@ -19,8 +19,13 @@ class MainActivity : AppCompatActivity() {
             val answer2 = resources.getStringArray(R.array.question1_answer2)
             val answer3 = resources.getStringArray(R.array.question1_answer3)
             val trueAnswer = resources.getStringArray(R.array.question1_true_answer)
-            val q = Question(img, question, answer1, answer2, answer3, trueAnswer, 0)
-            startActivity(Intent(this@MainActivity, QuizActivity::class.java).putExtra(QuizActivity.EXTRA_QUESTION, q))
+            val q = Question(img, question, answer1, answer2, answer3, trueAnswer, 0, 0)
+            startActivity(
+                Intent(this@MainActivity, QuizActivity::class.java).putExtra(
+                    QuizActivity.EXTRA_QUESTION,
+                    q
+                )
+            )
         }
 
         val topic2: Button = findViewById(R.id.btn_topic2)
@@ -32,8 +37,13 @@ class MainActivity : AppCompatActivity() {
             val answer2 = resources.getStringArray(R.array.question2_answer2)
             val answer3 = resources.getStringArray(R.array.question2_answer3)
             val trueAnswer = resources.getStringArray(R.array.question2_true_answer)
-            val q = Question(img, question, answer1, answer2, answer3, trueAnswer, 0)
-            startActivity(Intent(this@MainActivity, QuizActivity::class.java).putExtra(QuizActivity.EXTRA_QUESTION, q))
+            val q = Question(img, question, answer1, answer2, answer3, trueAnswer, 0, 0)
+            startActivity(
+                Intent(this@MainActivity, QuizActivity::class.java).putExtra(
+                    QuizActivity.EXTRA_QUESTION,
+                    q
+                )
+            )
         }
     }
 }

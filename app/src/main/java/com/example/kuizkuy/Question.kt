@@ -11,5 +11,6 @@ data class Question(
     val answer2: Array<String>,
     val answer3: Array<String>,
     val trueAnswer: Array<String>,
-    var indicator: Int
+    var indicator: Int,
+    var point: Int
 ) : Parcelable

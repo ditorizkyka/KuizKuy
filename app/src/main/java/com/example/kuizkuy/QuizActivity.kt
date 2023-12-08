@@ -33,69 +33,75 @@ class QuizActivity : AppCompatActivity() {
 
         if (q != null) {
             img.setImageResource(q.img)
-            qNumber.text = "No. ${q.indicator+1}"
+            qNumber.text = "No. ${q.indicator + 1}"
             question.text = q.question[q.indicator]
             answer1.text = q.answer1[q.indicator]
             answer2.text = q.answer2[q.indicator]
             answer3.text = q.answer3[q.indicator]
 
             answer1.setOnClickListener {
-                if (answer1.text == q.trueAnswer[q.indicator] && q.indicator < q.question.size-1) {
-                    q.indicator++
+                if (answer1.text == q.trueAnswer[q.indicator]) {
+                    q.point++
+                }
+                q.indicator++
+                if (q.indicator < q.question.size) {
                     startActivity(
                         Intent(this@QuizActivity, QuizActivity::class.java).putExtra(
                             EXTRA_QUESTION,
                             q
                         )
                     )
-                } else if (answer1.text == q.trueAnswer[q.indicator]) {
-                    startActivity(Intent(this@QuizActivity, FinishActivity::class.java))
                 } else {
-                    q.indicator = 0
-                    startActivity(Intent(this@QuizActivity, FailActivity::class.java).putExtra(
-                        FailActivity.EXTRA_QUESTION,
-                        q
-                    ))
+                    startActivity(
+                        Intent(this@QuizActivity, FinishActivity::class.java).putExtra(
+                            FinishActivity.EXTRA_QUESTION,
+                            q
+                        )
+                    )
                 }
             }
 
             answer2.setOnClickListener {
-                if (answer2.text == q.trueAnswer[q.indicator] && q.indicator < q.question.size-1) {
-                    q.indicator++
+                if (answer2.text == q.trueAnswer[q.indicator]) {
+                    q.point++
+                }
+                q.indicator++
+                if (q.indicator < q.question.size) {
                     startActivity(
                         Intent(this@QuizActivity, QuizActivity::class.java).putExtra(
                             EXTRA_QUESTION,
                             q
                         )
                     )
-                } else if (answer2.text == q.trueAnswer[q.indicator]) {
-                    startActivity(Intent(this@QuizActivity, FinishActivity::class.java))
                 } else {
-                    q.indicator = 0
-                    startActivity(Intent(this@QuizActivity, FailActivity::class.java).putExtra(
-                        FailActivity.EXTRA_QUESTION,
-                        q
-                    ))
+                    startActivity(
+                        Intent(this@QuizActivity, FinishActivity::class.java).putExtra(
+                            FinishActivity.EXTRA_QUESTION,
+                            q
+                        )
+                    )
                 }
             }
 
             answer3.setOnClickListener {
-                if (answer3.text == q.trueAnswer[q.indicator] && q.indicator < q.question.size-1) {
-                    q.indicator++
+                if (answer3.text == q.trueAnswer[q.indicator]) {
+                    q.point++
+                }
+                q.indicator++
+                if (q.indicator < q.question.size) {
                     startActivity(
                         Intent(this@QuizActivity, QuizActivity::class.java).putExtra(
                             EXTRA_QUESTION,
                             q
                         )
                     )
-                } else if (answer3.text == q.trueAnswer[q.indicator]) {
-                    startActivity(Intent(this@QuizActivity, FinishActivity::class.java))
                 } else {
-                    q.indicator = 0
-                    startActivity(Intent(this@QuizActivity, FailActivity::class.java).putExtra(
-                        FailActivity.EXTRA_QUESTION,
-                        q
-                    ))
+                    startActivity(
+                        Intent(this@QuizActivity, FinishActivity::class.java).putExtra(
+                            FinishActivity.EXTRA_QUESTION,
+                            q
+                        )
+                    )
                 }
             }
         }

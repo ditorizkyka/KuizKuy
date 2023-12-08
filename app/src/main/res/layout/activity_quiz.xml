@@ -13,7 +13,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:text="No. 1"
+        android:text="@string/quiz_number"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +39,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_margin="24dp"
-            android:src="@drawable/undraw_text_files_au1q" />
+            android:src="@drawable/undraw_preferences_popup_re_4qk0" />
     </androidx.cardview.widget.CardView>
 
     <ScrollView
@@ -57,7 +57,7 @@
             android:id="@+id/question"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fringilla ut morbi tincidunt augue interdum. Elit eget gravida cum sociis natoque penatibus. Etiam sit amet nisl purus in mollis nunc. Purus ut faucibus pulvinar elementum. Urna porttitor rhoncus dolor purus non enim praesent. Venenatis urna cursus eget nunc scelerisque viverra. Vel risus commodo viverra maecenas. Id consectetur purus ut faucibus pulvinar elementum integer. Diam ut venenatis tellus in metus vulputate eu scelerisque felis. A erat nam at lectus urna duis convallis. Facilisi morbi tempus iaculis urna id."
+            android:text="@string/question"
             android:textAlignment="center"
             android:textSize="20sp" />
     </ScrollView>
@@ -67,7 +67,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Pilih Jawaban"
+        android:text="@string/choose_answer"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -82,7 +82,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="64dp"
         android:padding="16dp"
-        android:text="Jawaban 1"
+        android:text="@string/answer1"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -96,7 +96,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="64dp"
         android:padding="16dp"
-        android:text="Jawaban 2"
+        android:text="@string/answer2"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -110,7 +110,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="64dp"
         android:padding="16dp"
-        android:text="Jawaban 3"
+        android:text="@string/answer3"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
