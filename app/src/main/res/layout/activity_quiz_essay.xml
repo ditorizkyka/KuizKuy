@@ -94,6 +94,7 @@
         android:layout_marginStart="96dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="96dp"
+        android:padding="16dp"
         android:text="@string/next_answer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
