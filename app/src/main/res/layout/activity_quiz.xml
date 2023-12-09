@@ -39,7 +39,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_margin="24dp"
-            android:src="@drawable/undraw_preferences_popup_re_4qk0" />
+            android:src="@drawable/undraw_welcoming_re_x0qo" />
     </androidx.cardview.widget.CardView>
 
     <ScrollView

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Kuizkuy!</string>
+    <string name="app_name">KuizKuy!</string>
     <string name="landing_description">Silahkan pilih salah satu topik di bawah untuk memulai</string>
     <string name="choose_topic">Pilih Topik Kuis</string>
     <string name="topic1">Topik 1</string>
@@ -16,6 +16,8 @@
     <string name="congrats">Selamat, Anda berhasil menyelesaikan kuis</string>
     <string name="your_score">Skor Anda</string>
     <string name="score">100/100</string>
+    <string name="btn_about">About App</string>
+    <string name="desc_about">KuizKuy! adalah sebuah aplikasi yang menyediakan banyak soal-soal menarik seputar pengetahuan umum. KuizKuy! memiliki misi untuk memberikan pengetahuan sebanyak-banyaknya dan menambah wawasan para pengguna setelah menggunakan aplikasi ini.</string>
 
     <!-- Topik 1: Geografi -->
 
@@ -81,6 +83,8 @@
         <item>Sri Sultan Hamengkubuwono IX</item>
     </string-array>
 
+    <!-- Topik 3: Matematika -->
+
     <string-array name="question3">
         <item>1+1</item>
         <item>2+2</item>
@@ -92,7 +96,4 @@
         <item>4</item>
         <item>6</item>
     </string-array>
-    
-    <string name="btn_about">About App</string>
-    <string name="desc_about">KuizKuy! adalah sebuah aplikasi yang menyediakan banyak soal-soal menarik seputar pengetahuan umum. Kuizkuy memiliki misi untuk memberikan pengetahuan sebanyak-banyaknya dan menambah wawasan para pengguna setelah menggunakan aplikasi ini.  </string>
 </resources>

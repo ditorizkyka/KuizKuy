@@ -39,7 +39,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_margin="24dp"
-            android:src="@drawable/undraw_preferences_popup_re_4qk0" />
+            android:src="@drawable/undraw_welcoming_re_x0qo" />
     </androidx.cardview.widget.CardView>
 
     <ScrollView
@@ -76,20 +76,24 @@
 
     <EditText
         android:id="@+id/input_answer"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="56dp"
         android:hint="Jawab disini ya!"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/type_answer" />
+        app:layout_constraintTop_toBottomOf="@+id/type_answer" />
 
     <Button
         android:id="@+id/next_btn"
-        android:layout_width="150dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="96dp"
         android:text="@string/next_answer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
