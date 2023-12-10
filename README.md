@@ -1,3 +1,5 @@
+# Download Link
+https://1drv.ms/u/s!AqCll4r0Bo92gpsH5CbRQaGmrND-Xw
 # Deskripsi Singkat
 KuizKuy! merupakan aplikasi kuis sederhana yang dikembangkan oleh [Andito Rizkyka](https://github.com/anditorizkyka) dan [Ma'ruf Firdaus](https://github.com/maruffirdaus). Aplikasi ini berisi kumpulan soal yang dapat dikerjakan oleh pengguna secara langsung. Selain itu, disertakan pula halaman khusus yang berisi jawaban dari masing-masing soal.
 # Screenshots
