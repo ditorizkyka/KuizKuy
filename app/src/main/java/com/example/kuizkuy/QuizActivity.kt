@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.activity.addCallback
 
 class QuizActivity : AppCompatActivity() {
     companion object {
@@ -17,8 +18,19 @@ class QuizActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz)
 
-        val img: ImageView = findViewById(R.id.question_image)
+        onBackPressedDispatcher.addCallback(this) {
+
+        }
+
+        val backBtn: Button = findViewById(R.id.btn_back)
+
+        backBtn.setOnClickListener {
+            startActivity(Intent(this@QuizActivity, MainActivity::class.java))
+            finish()
+        }
+
         val qNumber: TextView = findViewById(R.id.question_number)
+        val img: ImageView = findViewById(R.id.question_image)
         val question: TextView = findViewById(R.id.question)
         val answer1: Button = findViewById(R.id.answer1)
         val answer2: Button = findViewById(R.id.answer2)
@@ -32,8 +44,11 @@ class QuizActivity : AppCompatActivity() {
         }
 
         if (q != null) {
+            qNumber.text = buildString {
+                append("No. ")
+                append(q.indicator + 1)
+            }
             img.setImageResource(q.img)
-            qNumber.text = "No. ${q.indicator + 1}"
             question.text = q.question[q.indicator]
             answer1.text = q.answer1[q.indicator]
             answer2.text = q.answer2[q.indicator]
@@ -51,6 +66,7 @@ class QuizActivity : AppCompatActivity() {
                             q
                         )
                     )
+                    finish()
                 } else {
                     startActivity(
                         Intent(this@QuizActivity, FinishActivity::class.java).putExtra(
@@ -58,6 +74,7 @@ class QuizActivity : AppCompatActivity() {
                             q
                         )
                     )
+                    finish()
                 }
             }
 
@@ -73,6 +90,7 @@ class QuizActivity : AppCompatActivity() {
                             q
                         )
                     )
+                    finish()
                 } else {
                     startActivity(
                         Intent(this@QuizActivity, FinishActivity::class.java).putExtra(
@@ -80,6 +98,7 @@ class QuizActivity : AppCompatActivity() {
                             q
                         )
                     )
+                    finish()
                 }
             }
 
@@ -95,6 +114,7 @@ class QuizActivity : AppCompatActivity() {
                             q
                         )
                     )
+                    finish()
                 } else {
                     startActivity(
                         Intent(this@QuizActivity, FinishActivity::class.java).putExtra(
@@ -102,6 +122,7 @@ class QuizActivity : AppCompatActivity() {
                             q
                         )
                     )
+                    finish()
                 }
             }
         }

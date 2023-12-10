@@ -5,10 +5,12 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.inputmethod.EditorInfo
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.activity.addCallback
 
 class QuizEssayActivity : AppCompatActivity() {
     companion object {
@@ -20,37 +22,60 @@ class QuizEssayActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz_essay)
 
-        val img: ImageView = findViewById(R.id.question_image)
+        onBackPressedDispatcher.addCallback(this) {
+
+        }
+
+        val backBtn: Button = findViewById(R.id.btn_back)
+
+        backBtn.setOnClickListener {
+            startActivity(Intent(this@QuizEssayActivity, MainActivity::class.java))
+            finish()
+        }
+
         val qNumber: TextView = findViewById(R.id.question_number)
+        val img: ImageView = findViewById(R.id.question_image)
         val question: TextView = findViewById(R.id.question)
-        val input : EditText = findViewById(R.id.input_answer)
-        val next : Button = findViewById(R.id.next_btn)
+        val input: EditText = findViewById(R.id.input_answer)
+        val nextBtn: Button = findViewById(R.id.btn_next)
 
         val q = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            intent.getParcelableExtra(QuizEssayActivity.EXTRA_QUESTIONESSAY, QuestionEssay::class.java)
+            intent.getParcelableExtra(EXTRA_QUESTIONESSAY, QuestionEssay::class.java)
         } else {
             @Suppress("DEPRECATION")
-            intent.getParcelableExtra(QuizEssayActivity.EXTRA_QUESTIONESSAY)
+            intent.getParcelableExtra(EXTRA_QUESTIONESSAY)
         }
 
         if (q != null) {
+            qNumber.text = buildString {
+                append("No. ")
+                append(q.indicator + 1)
+            }
             img.setImageResource(q.img)
-            qNumber.text = "No. ${q.indicator + 1}"
             question.text = q.question[q.indicator]
 
-            next.setOnClickListener {
-                val inputPolusi = input.text.toString()
-                if (inputPolusi == q.trueAnswer[q.indicator]) {
+            input.setOnEditorActionListener { _, actionId, _ ->
+                if (actionId == EditorInfo.IME_ACTION_DONE) {
+                    nextBtn.performClick()
+                    return@setOnEditorActionListener true
+                }
+                return@setOnEditorActionListener false
+            }
+
+            nextBtn.setOnClickListener {
+                val inputAnswer = input.text.toString()
+                if (inputAnswer == q.trueAnswer[q.indicator]) {
                     q.point++
                 }
                 q.indicator++
                 if (q.indicator < q.question.size) {
                     startActivity(
                         Intent(this@QuizEssayActivity, QuizEssayActivity::class.java).putExtra(
-                            QuizEssayActivity.EXTRA_QUESTIONESSAY,
+                            EXTRA_QUESTIONESSAY,
                             q
                         )
                     )
+                    finish()
                 } else {
                     startActivity(
                         Intent(this@QuizEssayActivity, FinishActivity::class.java).putExtra(
@@ -58,6 +83,7 @@ class QuizEssayActivity : AppCompatActivity() {
                             q
                         )
                     )
+                    finish()
                 }
             }
         }

@@ -13,10 +13,18 @@
         android:theme="@style/Theme.Kuizkuy"
         tools:targetApi="31">
         <activity
+            android:name=".QuizReviewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LicenseViewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".QuizEssayActivity"
             android:exported="false"
-            android:noHistory="true"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".AboutApp"
             android:exported="false"
@@ -24,16 +32,15 @@
         <activity
             android:name=".FinishActivity"
             android:exported="false"
-            android:noHistory="true"
             android:screenOrientation="portrait" />
         <activity
             android:name=".QuizActivity"
             android:exported="false"
-            android:noHistory="true"
             android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
+            android:noHistory="true"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

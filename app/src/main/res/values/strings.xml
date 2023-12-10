@@ -6,7 +6,7 @@
     <string name="topic2">Topik 2</string>
     <string name="topic3">Topik 3</string>
     <string name="quiz_number">No. 1</string>
-    <string name="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fringilla ut morbi tincidunt augue interdum. Elit eget gravida cum sociis natoque penatibus. Etiam sit amet nisl purus in mollis nunc. Purus ut faucibus pulvinar elementum. Urna porttitor rhoncus dolor purus non enim praesent. Venenatis urna cursus eget nunc scelerisque viverra. Vel risus commodo viverra maecenas. Id consectetur purus ut faucibus pulvinar elementum integer. Diam ut venenatis tellus in metus vulputate eu scelerisque felis. A erat nam at lectus urna duis convallis. Facilisi morbi tempus iaculis urna id.</string>
+    <string name="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fringilla ut morbi tincidunt augue interdum.</string>
     <string name="choose_answer">Pilih Jawaban</string>
     <string name="type_answer">Ketik Jawaban</string>
     <string name="next_answer">Lanjut</string>
@@ -17,7 +17,21 @@
     <string name="your_score">Skor Anda</string>
     <string name="score">100/100</string>
     <string name="btn_about">About App</string>
-    <string name="desc_about">KuizKuy! adalah sebuah aplikasi yang menyediakan banyak soal-soal menarik seputar pengetahuan umum. KuizKuy! memiliki misi untuk memberikan pengetahuan sebanyak-banyaknya dan menambah wawasan para pengguna setelah menggunakan aplikasi ini.</string>
+    <string name="desc_about">KuizKuy! adalah sebuah aplikasi yang menyediakan banyak soal-soal menarik seputar pengetahuan umum. KuizKuy! memiliki misi untuk memberikan pengetahuan sebanyak-banyaknya dan menambah wawasan para pengguna setelah menggunakan aplikasi ini 🔥🔥.</string>
+    <string name="answer_here">Jawab di sini ya!</string>
+    <string name="back">Kembali</string>
+    <string name="about_app_title">Tentang KuizKuy!</string>
+    <string name="develop_title">Developed by</string>
+    <string name="anditorizkyka">anditorizkyka</string>
+    <string name="maruffirdaus">maruffirdaus</string>
+    <string name="licenses">Licenses</string>
+    <string name="view_answer">Lihat Jawaban</string>
+    <string name="finish">Selesai</string>
+    <string name="license_notice">License notice</string>
+    <string name="answer">Jawaban</string>
+    <string name="answer_content">Jawaban Soal</string>
+    <string name="prev">Sebelumnya</string>
+    <string name="next">Selanjutnya</string>
 
     <!-- Topik 1: Geografi -->
 
