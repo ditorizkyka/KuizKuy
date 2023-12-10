@@ -52,7 +52,7 @@ class QuizReviewActivity : AppCompatActivity() {
                     e.indicator--
                     startActivity(
                         Intent(this@QuizReviewActivity, QuizReviewActivity::class.java).putExtra(
-                            EXTRA_QUESTION,
+                            EXTRA_QUESTIONESSAY,
                             e
                         )
                     )
