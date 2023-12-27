@@ -6,23 +6,22 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.TextView
 import androidx.activity.addCallback
 
-class AboutApp : AppCompatActivity(){
+class AboutAppActivity : AppCompatActivity(){
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_about_app)
 
         onBackPressedDispatcher.addCallback(this) {
-            startActivity(Intent(this@AboutApp, MainActivity::class.java))
+            startActivity(Intent(this@AboutAppActivity, MainActivity::class.java))
             finish()
         }
 
         val backBtn = findViewById<Button>(R.id.btn_back)
         backBtn.setOnClickListener {
-            startActivity(Intent(this@AboutApp,MainActivity::class.java))
+            startActivity(Intent(this@AboutAppActivity,MainActivity::class.java))
             finish()
         }
 
@@ -36,13 +35,6 @@ class AboutApp : AppCompatActivity(){
 
         maruf.setOnClickListener {
             startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/maruffirdaus")))
-        }
-
-        val license: TextView = findViewById(R.id.license)
-
-        license.setOnClickListener {
-            startActivity(Intent(this@AboutApp, LicenseViewActivity::class.java))
-            finish()
         }
     }
 

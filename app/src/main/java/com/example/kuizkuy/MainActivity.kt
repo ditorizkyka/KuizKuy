@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import androidx.activity.addCallback
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -70,7 +69,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View?) {
         when(v?.id) {
             R.id.btn_about -> {
-                val moveAbout = Intent(this@MainActivity, AboutApp::class.java)
+                val moveAbout = Intent(this@MainActivity, AboutAppActivity::class.java)
                 startActivity(moveAbout)
             }
         }
