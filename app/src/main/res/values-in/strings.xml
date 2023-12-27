@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="landing_description">Silahkan pilih salah satu topik di bawah untuk memulai</string>
+    <string name="choose_topic">Pilih Topik Kuis</string>
+    <string name="choose_answer">Pilih Jawaban</string>
+    <string name="type_answer">Ketik Jawaban</string>
+    <string name="next_answer">Lanjut</string>
+    <string name="congrats">Selamat, Anda berhasil menyelesaikan kuis</string>
+    <string name="your_score">Skor Anda</string>
+    <string name="desc_about">KuizKuy! adalah sebuah aplikasi yang menyediakan banyak soal-soal menarik seputar pengetahuan umum. KuizKuy! memiliki misi untuk memberikan pengetahuan sebanyak-banyaknya 🔥🔥.</string>
+    <string name="answer_here">Jawab di sini ya!</string>
+    <string name="back">Kembali</string>
+    <string name="about_app_title">Tentang KuizKuy!</string>
+    <string name="view_answer">Lihat Jawaban</string>
+    <string name="finish">Selesai</string>
+    <string name="prev">Sebelumnya</string>
+    <string name="next">Berikutnya</string>
+
+    <!-- Topic 1: Geography -->
+    <string name="geography">Geografi</string>
+
+    <string-array name="question1">
+        <item>Apa nama ibu kota dari Provinsi D. I. Yogyakarta?</item>
+        <item>Berapa jumlah provinsi di Indonesia?</item>
+        <item>Berapa jumlah pulau di Indonesia?</item>
+    </string-array>
+
+    <string-array name="question1_answer1">
+        <item>Surakarta</item>
+        <item>38</item>
+        <item>16.771</item>
+    </string-array>
+
+    <string-array name="question1_answer2">
+        <item>Yogyakarta</item>
+        <item>36</item>
+        <item>15.544</item>
+    </string-array>
+
+    <string-array name="question1_answer3">
+        <item>Purwakarta</item>
+        <item>34</item>
+        <item>17.754</item>
+    </string-array>
+
+    <string-array name="question1_true_answer">
+        <item>Yogyakarta</item>
+        <item>38</item>
+        <item>16.771</item>
+    </string-array>
+
+    <!-- Topic 2: History -->
+    <string name="history">Sejarah</string>
+
+    <string-array name="question2">
+        <item>Kapan Perang Dunia II terjadi?</item>
+        <item>Siapa pemenang dalam Perang Dunia II?</item>
+        <item>Siapa wakil presiden ke-2 Republik Indonesia?</item>
+    </string-array>
+
+    <string-array name="question2_answer1">
+        <item>2003 sampai 2006</item>
+        <item>Blok Sekutu</item>
+        <item>Sri Sultan Hamengkubuwono IX</item>
+    </string-array>
+
+    <string-array name="question2_answer2">
+        <item>1990 sampai 1998</item>
+        <item>Blok Poros</item>
+        <item>B. J. Habibie</item>
+    </string-array>
+
+    <string-array name="question2_answer3">
+        <item>1939 sampai 1945</item>
+        <item>Jerman</item>
+        <item>Abdurrahman Wahid</item>
+    </string-array>
+
+    <string-array name="question2_true_answer">
+        <item>Tahun 1939 sampai 1945</item>
+        <item>Blok Sekutu</item>
+        <item>Sri Sultan Hamengkubuwono IX</item>
+    </string-array>
+
+    <!-- Topic 3: Mathematics -->
+    <string name="mathematics">Matematika</string>
+
+    <string-array name="question3">
+        <item>1+1</item>
+        <item>2+2</item>
+        <item>3+3</item>
+    </string-array>
+
+    <string-array name="question3_true_answer">
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+    </string-array>
+</resources>

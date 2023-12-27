@@ -45,8 +45,8 @@ class QuizActivity : AppCompatActivity() {
 
         if (q != null) {
             qNumber.text = buildString {
-                append("No. ")
                 append(q.indicator + 1)
+                append(".")
             }
             img.setImageResource(q.img)
             question.text = q.question[q.indicator]

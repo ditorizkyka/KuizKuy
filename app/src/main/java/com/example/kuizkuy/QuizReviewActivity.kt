@@ -78,8 +78,8 @@ class QuizReviewActivity : AppCompatActivity() {
 
         if (q != null) {
             qNumber.text = buildString {
-                append("No. ")
                 append(q.indicator + 1)
+                append(".")
             }
             img.setImageResource(q.img)
             question.text = q.question[q.indicator]
@@ -88,12 +88,12 @@ class QuizReviewActivity : AppCompatActivity() {
             if (q.indicator == 0) {
                 prevBtn.visibility = View.INVISIBLE
             } else if (q.indicator == q.question.size - 1) {
-                nextBtn.text = "Selesai"
+                nextBtn.text = getString(R.string.finish)
             }
         } else if (e != null) {
             qNumber.text = buildString {
-                append("No. ")
                 append(e.indicator + 1)
+                append(".")
             }
             img.setImageResource(e.img)
             question.text = e.question[e.indicator]
@@ -102,7 +102,7 @@ class QuizReviewActivity : AppCompatActivity() {
             if (e.indicator == 0) {
                 prevBtn.visibility = View.INVISIBLE
             } else if (e.indicator == e.question.size - 1) {
-                nextBtn.text = "Selesai"
+                nextBtn.text = getString(R.string.finish)
             }
         }
 

@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main)
 
         val topic1: Button = findViewById(R.id.btn_topic1)
-        topic1.text = "Geografi"
+        topic1.text = getString(R.string.geography)
         topic1.setOnClickListener {
             val img = R.drawable.undraw_lost_re_xqjt
             val question = resources.getStringArray(R.array.question1)
@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
 
         val topic2: Button = findViewById(R.id.btn_topic2)
-        topic2.text = "Sejarah"
+        topic2.text = getString(R.string.history)
         topic2.setOnClickListener {
             val img = R.drawable.undraw_be_the_hero_ssr2
             val question = resources.getStringArray(R.array.question2)
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
 
         val topic3: Button = findViewById(R.id.btn_topic3)
-        topic3.text = "Matematika"
+        topic3.text = getString(R.string.mathematics)
         topic3.setOnClickListener {
             val img = R.drawable.undraw_quiz_re_aol4
             val question = resources.getStringArray(R.array.question3)
